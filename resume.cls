@@ -32,19 +32,19 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
+	left=0.3in,
+	right=0.3in,
+	top=0.5in,
+	bottom=0.5in,
 	nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
-%\setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+% \setlist{nosep} % removes all vertical spacing within and around the list
+\setlist[itemize]{topsep=0.2em, itemsep=0em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0.2em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
@@ -53,7 +53,7 @@
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*1.8}{*1.8}
+\titlespacing*{\section}{0cm}{*0.6}{*1.8}
 
 \titleformat{\subsection}
   {\large\raggedright}
@@ -104,12 +104,30 @@
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
+% defines one's GitHub
+% usage: \git{<git>}
+\newcommand{\git}[2][]{\faGit\ 
+\ifthenelse{\isempty{#1}}%
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
 % defines one's homepage
 % usage: \homepage{<homepage>}
 \newcommand{\homepage}[2][]{\faLink\ 
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
+% defines a link
+% usage: \link{<url>}
+\newcommand{\link}[2][]{\faLink\ 
+\ifthenelse{\isempty{#1}}%
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
+% defines a package repo
+% usage: \repo{<url>}
+\newcommand{\repo}[2][]{\faCubes\ 
+\ifthenelse{\isempty{#1}}%
+  {\href{#2}{#2}}
+  {\href{#2}{#1}}}
 
 \newcommand{\basicInfo}[1]{
   \centerline{\sffamily\large{#1}}

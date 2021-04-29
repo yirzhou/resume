@@ -1,10 +1,8 @@
 # Résumé
 
-Hit branch [zh_CN](https://github.com/billryan/resume/tree/zh_CN) if you want a Simplified Chinese résumé.
+> Note: This is my fork of the [original repo](https://github.com/billryan/resume).
 
-中文用户请前往 [zh_CN](https://github.com/billryan/resume/tree/zh_CN) 分支。
-
-An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Inspired by 
+An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Inspired by
 
 - [zachscrivena/simple-resume-cv](https://github.com/zachscrivena/simple-resume-cv)
 - [res](https://www.ctan.org/pkg/res)
@@ -20,6 +18,7 @@ An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Inspired by
 - FontAwesome 4.6.3 support
 
 ## Quick Start
+
 - Fork this repository
 - Add information about you directly in GitHub
 - Compile TeX file to PDF with [LaTeX.Online](https://latexonline.cc/)
