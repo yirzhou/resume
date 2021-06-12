@@ -13,76 +13,74 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{周逸人}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
+  \email{yiren.chow@gmail.com} \textperiodcentered\
+  \phone{(+86) 135-2082-0163} \textperiodcentered\
+  \github[yirzhou]{https://yirzhou.github.io/}
+}
+
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
-
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\datedsubsection{\textbf{卡内基梅隆大学}，加州，美国}{(预期) 2021年9月 -- 2022年12月}
+\textit{在读硕士研究生}\ 软件工程
+\datedsubsection{\textbf{滑铁卢大学}，安大略，加拿大}{2016年9月 -- 2021年4月}
+\textit{应用科学学士}\ 计算机工程，GPA 4.0 (91.86\%)
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+  % \item {\textbf{Courses:} Algorithm Design and Analysis, Programming for Performance, Distributed Computing, Algorithms and Data Structures, Operating Systems, Compilers, Database Systems, Computer Networks}
+  \item {\textbf{奖学金：} 总统研究奖，参与研究一款名为CheckerFramework的Java代码的静态分析工具}
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{Bloomberg LP.} \ 纽约，美国}{2020年9月 -- 2020年12月}
+\role{软件工程实习生}{}
+设计并实现了\underline{DataLoader}：一个兼容各种后端、可满足数百万日常请求的通用数据获取库。
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item {通过批处理和缓存减少数据获取的网络往返；}
+  \item {通过实现多线程和异步协程极大提高了获取金融数据的吞吐量；}
+  \item {在三个月内完成了库的设计、实现、测试和部署。}
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\datedsubsection{\textbf{TextNow Inc.} 安大略, 加拿大}{2019年9月 -- 2019年12月}
+\role{后端开发实习生}{}
+重新架构了\underline{QoS 数据包测试器}：一个测量 70 万+ Android 用户通话质量的 Go 微服务：
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item {通过在 Go 中实现并发来提高可扩展性，以允许并行处理数千个用户请求；}
+  \item {使用 OpenTelemetry 和 Datadog API 通过分布式跟踪提高服务可观察性；}
+  \item {三个月完成微服务的设计、实现、测试、部署。}
 \end{itemize}
-\end{onehalfspacing}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{Capital One Financial Corporation} 安大略，加拿大}{2019年1月 -- 2019年4月}
+\role{软件工程实习生}{}
+开发了\underline{PCI Crypto}：一种在内存中加密价值达数百万美元银行数据的应用程序。
+\begin{itemize}
+  \item {利用多处理将加密大文件的内存消耗从 O(n) 减少到 O(1)；}
+  \item {通过利用AWS Lambda、SNS、S3构建事件驱动的监控系统，使数据所有者能够及时收到反馈；}
+  \item {协调五个团队之间的协作，并在两个月内将应用程序部署到生产环境中。}
+\end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
+\datedsubsection{\textbf{Nokia Corporation} 安大略，加拿大}{2018年5月 -- 2018年8月}
+\role{网络开发实习生}{}
+参与开发了\underline{Nuage SD-WAN 门户}：一个自动部署和管理大规模网络的 Web 应用程序：
+\begin{itemize}
+  \item {通过构建自动化大规模网络配置的专有工具，将 SD-WAN 门户功能测试和开发的劳动强度降低了 70\%；}
+  \item {在 Angular 中构建、优化和发布了 SD-WAN 门户的一系列 UI 功能（例如导航栏、表单）；}
+  \item {三个月内完成工具的开发和文档化，发布给10+开发者。}
+\end{itemize}
+
+\section{\faCodeFork\ 项目}
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item \link[DCache]{https://drive.google.com/file/d/1Svd-wbXZiO84QmVKnKBp1cClJb2uvtWT/view?usp=sharing}：分布式、P2P和有地理空间感知的移动存储网络。
+  \item \git[Grafana Datasource Plugin for Datadog]{https://github.com/Enflick/grafana-datasource-datadog/pull/7}：用于大数据的分析和可视化软件。
+  \item \repo[gpgodzilla]{https://pypi.org/project/gpgodzilla/}：一个 Python 模块，允许用户操作具有恒定内存空间的任意大小的文件。
+  \item \link[YNOT Blogs]{http://ynotblogs.herokuapp.com/blogs}：使用 NodeJS 和 MongoDB 进行用户身份验证、授权和搜索的博客应用程序。
+  \item \link[zhouyiren.rocks]{https://zhouyiren.rocks}：一个使用 ReactJS、React Router 和 GitHub GraphQL API 的响应式极简个人网站。
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
+\section{\faCogs\ 技能}
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 编程语言：Python，Go，C++，Java，JavaScript，Rust，SQL
+  \item 工具/杂项：CMake，ReactJS，NodeJS，Docker，AWS，Git
 \end{itemize}
 
 %% Reference
