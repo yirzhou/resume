@@ -128,6 +128,9 @@
 \ifthenelse{\isempty{#1}}%
   {\href{#2}{#2}}
   {\href{#2}{#1}}}
+% defines a location
+% usage: \location{<url>}
+\newcommand{\location}[2][]{\faHome\ {#1}}
 
 \newcommand{\basicInfo}[1]{
   \centerline{\sffamily\large{#1}}
