@@ -32,8 +32,8 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.3in,
-	right=0.3in,
+	left=0.5in,
+	right=0.5in,
 	top=0.5in,
 	bottom=0.5in,
 	nohead
@@ -43,17 +43,17 @@
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
 % \setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.2em, itemsep=0em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.2em, leftmargin=1.5pc}
+\setlist[itemize]{topsep=0.2em, itemsep=0em, leftmargin=1pc}
+\setlist[enumerate]{topsep=0.2em, leftmargin=1pc}
 \RequirePackage[super]{nth}
 
-\titleformat{\section}         % Customise the \section command 
+\titleformat{\section}              % Customise the \section command 
   {\Large\scshape\raggedright} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*0.6}{*1.8}
+                                    % small capitals (\scshape) and left aligned (\raggedright)                             
+  {}{0em}                           % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                                % Can be used to insert code before the heading
+  [\titlerule]                      % Inserts a horizontal line after the heading
+\titlespacing*{\section}{0cm}{*0.3}{*1.8}
 
 \titleformat{\subsection}
   {\large\raggedright}
