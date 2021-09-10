@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
-\LoadClass[11pt]{article}
+\LoadClass[10.9pt]{article}
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -20,15 +20,15 @@
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
-\setmainfont[
-  Path = fonts/Main/ ,
-  Extension = .otf ,
-  UprightFont = *-regular ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic ,
-  SmallCapsFont = Fontin-SmallCaps
-]{texgyretermes}
+% \setmainfont[
+%   Path = fonts/Main/ ,
+%   Extension = .otf ,
+%   UprightFont = *-regular ,
+%   BoldFont = *-bold ,
+%   ItalicFont = *-italic ,
+%   BoldItalicFont = *-bolditalic ,
+%   SmallCapsFont = Fontin-SmallCaps
+% ]{texgyretermes}
 
 \RequirePackage[
 	a4paper,
@@ -41,10 +41,10 @@
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
-\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
+% \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
 % \setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.2em, itemsep=0em, leftmargin=1pc}
-\setlist[enumerate]{topsep=0.2em, leftmargin=1pc}
+\setlist[itemize]{topsep=0.2em, itemsep=0em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0.2em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}              % Customise the \section command 
@@ -56,7 +56,7 @@
 \titlespacing*{\section}{0cm}{*0.3}{*1.8}
 
 \titleformat{\subsection}
-  {\large\raggedright}
+  {\normalsize\raggedright}
   {}{0em}
   {}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
