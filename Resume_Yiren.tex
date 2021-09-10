@@ -1,8 +1,11 @@
 % !TEX program = xelatex
 
+
 \documentclass{resume}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{setspace}
+\usepackage{anyfontsize}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -17,74 +20,93 @@
   \location{Mountain View, CA}
 }
 
+
 \section{\faCogs\ Skills}
-% \section{Skills}
-\textbf{Programming Languages}: Python, Java, Go, JavaScript, C++, Rust, SQL \\
-\textbf{Technologies and Tools}: Git, Linux, Docker, AWS, NodeJS, CMake
+ % \section{Skills}
+ {
+  \fontsize{10.5pt}{2}\selectfont
+  \onehalfspacing
+  \textbf{Programming Languages}: Python, Java, Go, JavaScript, C++, Rust, SQL \\
+  \textbf{Technologies and Tools}: Git, Linux, Docker, AWS, NodeJS, CMake
+  \par
+ }
 
 \section{\faGraduationCap\ Education}
-% \section{Education}
-\datedsubsection{\textbf{Carnegie Mellon University}, Mountain View, CA}{08/2021 -- 12/2022}
-\textit{Master of Science in Software Engineering}
-\begin{itemize}
-  \item {Relevant Courses: Foundation of Computer Systems, Machine Learning for Signal Processing, Foundations in Software Engineering.}
-\end{itemize}
+ % \section{Education}
+ {
+  \fontsize{10.5pt}{2}\selectfont
+  \datedsubsection{\textbf{Carnegie Mellon University}, Mountain View, CA}{08/2021 -- 12/2022}
+  \textit{Master of Science in Software Engineering}
+  \begin{itemize}
+    \item {Relevant Courses: Foundation of Computer Systems, Machine Learning for Signal Processing, Foundations in Software Engineering.}
+  \end{itemize}
 
-\datedsubsection{\textbf{University of Waterloo}, Waterloo, ON, Canada}{09/2016 -- 04/2021}
-\textit{Bachelor of Applied Science in Computer Engineering,} GPA 4.0/4.0 (91.86\%)
-\begin{itemize}
-  \item {Award: President's Research Award, for work on the CheckerFramework, a static analysis tool for Java code.}
-  \item {Relevant Courses: Programming for Performance, Algorithm Design and Analysis, Distributed Computing, Database Systems, Compilers, Operating Systems, Cooperative and Adaptive Algorithms, Probability Theory and Statistics.}
-\end{itemize}
+
+  \datedsubsection{\textbf{University of Waterloo}, Waterloo, ON, Canada}{09/2016 -- 04/2021}
+  \textit{Bachelor of Applied Science in Computer Engineering,} GPA 4.0/4.0 (91.86\%)
+  \begin{itemize}
+    \item {Award: President's Research Award, for work on the CheckerFramework, a static analysis tool for Java code.}
+    \item {Relevant Courses: Programming for Performance, Algorithm Design and Analysis, Distributed Computing, Database Systems, Compilers, Operating Systems, Cooperative and Adaptive Algorithms, Probability Theory and Statistics.}
+  \end{itemize}
+  \par
+ }
 
 
 \section{\faUsers\ Work Experience}
-% \section{Work Experience}
-\datedsubsection{\textbf{Bloomberg LP.}, New York City, NY, \emph{Software Engineer Intern}}{09/2020 -- 12/2020}
-Built DataLoader, a C++ data-fetching library to work with user-customizable protocols to serve millions of requests:
-\begin{itemize}
-  \item {Reduced network round-trips of data fetching via batching and caching of requests.}
-  \item {Increased network throughput by utilizing coroutines and event-loops.}
-  \item {Delivered comprehensive tech talk on DataLoader to 50+ engineers.}
-  \item {Completed full software development life cycle and deployed DataLoader in three months.}
-\end{itemize}
+ % \section{Work Experience}
+ {
+  \fontsize{10.5pt}{2}\selectfont
+  \datedsubsection{\textbf{Bloomberg LP.}, New York City, NY, \emph{Software Engineer Intern}}{09/2020 -- 12/2020}
+  Built DataLoader, a generic C++17 data-fetching library to work with user-customizable protocols to serve millions of requests:
+  \begin{itemize}
+    \item {Reduced network round-trips of data fetching via batching and caching of requests.}
+    \item {Increased network throughput by utilizing coroutines and event-loops.}
+    \item {Delivered comprehensive tech talk on DataLoader to 50+ engineers.}
+    \item {Completed full software development life cycle and deployed DataLoader in three months.}
+  \end{itemize}
 
-\datedsubsection{\textbf{TextNow Inc.}, Waterloo, Canada, \emph{Backend Developer Intern}}{09/2019 -- 12/2019}
-Re-architected QoS Packet Tester, A microservice written in Go to measure call quality of 700K+ Android users:
-\begin{itemize}
-  \item {Increased scalability by utilizing goroutines to allow parallel processing of thousands of user requests.}
-  \item {Improved services observability with distributed tracing using OpenTelemetry and Datadog API.}
-  \item {Completed full software development life cycle and deployed QoS Packet Tester in three months.}
-\end{itemize}
+  \datedsubsection{\textbf{TextNow Inc.}, Waterloo, Canada, \emph{Backend Developer Intern}}{09/2019 -- 12/2019}
+  Re-architected QoS Packet Tester, A microservice written in Go to measure call quality of 700K+ Android users:
+  \begin{itemize}
+    \item {Increased scalability by utilizing goroutines to allow parallel processing of thousands of user requests.}
+    \item {Improved services observability with distributed tracing using OpenTelemetry and Datadog API.}
+    \item {Completed full software development life cycle and deployed QoS Packet Tester in three months.}
+  \end{itemize}
 
-\datedsubsection{\textbf{Capital One Financial Corporation}, Toronto, Canada, \emph{Software Engineer Intern}}{01/2019 -- 04/2019}
-Developed PCI Crypto, a Python application to encrypt banking data amounting to millions of dollars in revenue:
-\begin{itemize}
-  \item {Achieved constant memory usage of encrypting large files by processing files in chunks.}
-  \item {Built event-driven monitoring system to allow data owners to receive timely feedback.}
-        % \item {Automated PCI files validation before file processing and encryption to reduce runtime errors.}
-  \item {Coordinated collaboration among five teams and deployed PCI Crypto to production within two months.}
-\end{itemize}
+  \datedsubsection{\textbf{Capital One Financial Corporation}, Toronto, Canada, \emph{Software Engineer Intern}}{01/2019 -- 04/2019}
+  Developed PCI Crypto, a Python application to encrypt banking data amounting to millions of dollars in revenue:
+  \begin{itemize}
+    \item {Achieved constant memory usage of encrypting large files by processing files in chunks.}
+    \item {Built event-driven monitoring system to allow data owners to receive timely feedback.}
+          % \item {Automated PCI files validation before file processing and encryption to reduce runtime errors.}
+    \item {Coordinated collaboration among five teams and deployed PCI Crypto to production within two months.}
+  \end{itemize}
 
-\datedsubsection{\textbf{Nokia Corporation}, Ottawa, Canada, \emph{Web Developer Intern}}{05/2018 -- 08/2018}
-Developed Nuage SD-WAN Portal, an application which automates deployment and management of large-scale networks:
-\begin{itemize}
-  \item {Reduced labor intensity of feature testing and development of SD-WAN portal by 70\%
-        by building a proprietary tool to automate configuration of large-scale networks.}
-  \item {Built, optimized, and shipped an array of UI features (e.g., navigation bars, forms) of SD-WAN Portal in Angular.}
-  \item {Completed development within three months and released automation tool to 10+ developers.}
-\end{itemize}
+  \datedsubsection{\textbf{Nokia Corporation}, Ottawa, Canada, \emph{Web Developer Intern}}{05/2018 -- 08/2018}
+  Developed Nuage SD-WAN Portal, a application to automate deployment and management of large-scale networks:
+  \begin{itemize}
+    \item {Reduced labor intensity of feature testing and development of SD-WAN portal by 70\%
+          by building a proprietary tool to automate configuration of large-scale networks.}
+    \item {Built, optimized, and shipped an array of UI features (e.g., navigation bars, forms) of SD-WAN Portal in Angular and Spring.}
+    \item {Completed development within three months and released automation tool to 10+ developers.}
+  \end{itemize}
+
+  \par
+ }
 
 \section{\faCodeFork\ Projects}
 % \section{Projects}
-
-\link[\textbf{DCache}]{https://drive.google.com/file/d/1Svd-wbXZiO84QmVKnKBp1cClJb2uvtWT/view?usp=sharing}: A distributed, P2P, and geolocation-aware mobile storage network. \\
-\link[\textbf{rsbday}]{https://github.com/yirzhou/IsolatedSoul/tree/main/rsbday}: A command-line tool for storing birthdays and sending reminders, written in Rust. \\
+{
+\fontsize{10.5pt}{2}\selectfont
+\onehalfspacing
+\link[\textbf{DCache}]{https://drive.google.com/file/d/1Svd-wbXZiO84QmVKnKBp1cClJb2uvtWT/view?usp=sharing}: {\fontsize{10.8pt}{2}\selectfont A distributed, P2P, and geolocation-aware mobile storage network.\\ \par}
+\link[\textbf{BDay.rs}]{https://github.com/yirzhou/IsolatedSoul/tree/main/rsbday}: A command-line tool for storing birthdays and sending reminders, written in Rust. \\
 \git[\textbf{Grafana Datasource Plugin for Datadog}]{https://github.com/Enflick/grafana-datasource-datadog/pull/7}: A big-data analytics and visualization software, for use in Grafana. \\
-\repo[\textbf{gpgodzilla}]{https://pypi.org/project/gpgodzilla/}: A Python module to allow users to manipulate arbitrary-sized files with constant memory space. \\
+\repo[\textbf{GPGodzilla}]{https://pypi.org/project/gpgodzilla/}: A Python module to allow users to manipulate arbitrary-sized files with constant memory space. \\
 \link[\textbf{YNOT Blogs}]{http://ynotblogs.herokuapp.com/blogs}: A blogging application with user authentication, authorization, and search in NodeJS and MongoDB. \\
-\link[\textbf{zhouyiren.rocks}]{https://zhouyiren.rocks}: A responsive and minimalist portfolio using ReactJS and Github GraphQL API. \\
-
+\link[\textbf{ZhouYiren.rocks}]{https://zhouyiren.rocks}: A responsive and minimalist portfolio using ReactJS and Github GraphQL API. \\
+\par
+}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
