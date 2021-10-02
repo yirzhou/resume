@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
 \RequirePackage{anyfontsize}
-\LoadClass[10.5pt]{article}
+\LoadClass[11pt]{article}
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -17,19 +17,19 @@
 % use fontawesome
 \RequirePackage{fontawesome}
 % use xcolor for customizing color
-%\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
-% \setmainfont[
-%   Path = fonts/Main/ ,
-%   Extension = .otf ,
-%   UprightFont = *-regular ,
-%   BoldFont = *-bold ,
-%   ItalicFont = *-italic ,
-%   BoldItalicFont = *-bolditalic ,
-%   SmallCapsFont = Fontin-SmallCaps
-% ]{texgyretermes}
+\setmainfont[
+  Path = fonts/Main/ ,
+  Extension = .otf ,
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
+  SmallCapsFont = Fontin-SmallCaps
+]{texgyretermes}
 
 \RequirePackage[
 	a4paper,
